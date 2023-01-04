@@ -7,29 +7,33 @@ public class SnakeAndLadderGame {
 		 int position = 0;
 		 System.out.println("position of single player is :" + position);
 		 Random random = new Random();
-		 int roll = 1 + random.nextInt(6);
-		 System.out.println("after rolling dice position is:" + roll);
 		 
+		 while(position < 100) {
 		 int options = random.nextInt(3);
 		 System.out.println("Option :" + options);
         
-        switch (options) {
+        switch (options) { 
         case 0:
-     	   System.out.println("Ladder i.e. move ahead!");
-     	   position += roll ;
-     	   break;
+       	 int roll = 1 + random.nextInt(6);
+   		 System.out.println("after rolling dice position is:" + roll);
+   	     System.out.println("Ladder i.e. move ahead!");
+   	     if(position + roll <=100)
+     	     position += roll ;
+     	     break;
      	   
         case 1:
-     	   System.out.println("snake i.e. please move back");
-     	   position -= roll;
-     	   if(position < 0)
-     		   position = 0;
-     	   break;
+       	 int rolll = 1 + random.nextInt(6);
+   		 System.out.println("after rolling dice position is:" + rolll);
+            System.out.println("snake i.e. please move back");
+       	 if(position < 0)
+     	     position -= rolll;
+     	     break;
      	   
         default:
      	   System.out.println("No Play");
         }
         
-        System.out.println("position of single player is = " + position);       
-	}
+        System.out.println("position of single player is = " + position);                
+        }    
+}
 }
