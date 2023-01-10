@@ -6,5 +6,4 @@ public class SnakeAndLadderGame {
 		// TODO Auto-generated method stub
 
 	}
-
 }
