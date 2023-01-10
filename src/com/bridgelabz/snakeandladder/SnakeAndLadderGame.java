@@ -36,7 +36,6 @@ public class SnakeAndLadderGame {
 }
         System.out.println("position of single player is = " + position);       
 	}
-         
          switch (options) { 
          case 0:
         	 int roll = 1 + random.nextInt(6);
