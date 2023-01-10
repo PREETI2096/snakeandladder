@@ -1,7 +1,6 @@
 package com.bridgelabz.snakeandladder;
 import java.util.Random;
 public class SnakeAndLadderGame {
-
 	static final int WINNING_POSITION = 100;
 	public static void main(String[] args) {
 		System.out.println("Welcome to snake and ladder game program");
