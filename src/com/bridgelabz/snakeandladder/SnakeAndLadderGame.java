@@ -30,7 +30,8 @@ public class SnakeAndLadderGame {
      	   System.out.println("No Play");
         }
         System.out.println("position of single player is = " + position);                
-        }    
+        } 
+		
 }
 }
         System.out.println("position of single player is = " + position);       
