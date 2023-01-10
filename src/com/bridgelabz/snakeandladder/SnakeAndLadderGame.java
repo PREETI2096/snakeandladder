@@ -1,12 +1,10 @@
 package com.bridgelabz.snakeandladder;
 import java.util.Random;
 public class SnakeAndLadderGame {
-
 	static final int WINNING_POSITION = 100;
 	public static void main(String[] args) {
 		
 		System.out.println("Welcome to snake and ladder game program");
-		
 		 int position = 0;
 		 int rollingCount = 0;
 		 System.out.println("position of single player is :" + position);
@@ -15,6 +13,29 @@ public class SnakeAndLadderGame {
 		 while(position < WINNING_POSITION ) {
 		 int options = random.nextInt(3);
 		 System.out.println("Option :" + options);
+     
+        switch (options) {
+        case 0:
+     	   System.out.println("Ladder i.e. move ahead!");
+     	   position += roll ;
+     	   break;
+     	   
+        case 1:
+     	   System.out.println("snake i.e. please move back");
+     	   position -= roll;
+     	   if(position < 0)
+     		   position = 0;
+     	   break;
+     	   
+        default:
+     	   System.out.println("No Play");
+        }
+        System.out.println("position of single player is = " + position);                
+        }    
+}
+}
+        System.out.println("position of single player is = " + position);       
+	}
          
          switch (options) { 
          case 0:
@@ -41,4 +62,5 @@ public class SnakeAndLadderGame {
          }  
 		 System.out.println("Number of roles to win:" + rollingCount);
  }
+}
 }
